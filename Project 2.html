@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" href="Project 2.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">✦</div>
+
+            <div>
+                <h1>BMI Calculator</h1>
+                <p>Understand your body metrics</p>
+            </div>
+        </header>
+
+
+        <!-- Main Calculator Section -->
+        <div class="calculator-container">
+
+            <!-- Left Side: Input Section -->
+            <div class="input-section">
+
+                <div class="section-heading">
+                    <h2>Your Details</h2>
+                    <p>Enter your height and weight</p>
+                </div>
+
+                <div class="input-group">
+
+                    <label for="weight">Weight</label>
+
+                    <div class="input-box">
+                        <input
+                            type="number"
+                            id="weight"
+                            placeholder="Enter your weight"
+                            min="0"
+                            step="any"
+                        >
+
+                        <span>kg</span>
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="height">Height</label>
+
+                    <div class="input-box">
+                        <input
+                            type="number"
+                            id="height"
+                            placeholder="Enter your height"
+                            min="0"
+                            step="any"
+                        >
+
+                        <span>cm</span>
+                    </div>
+
+                </div>
+
+
+                <button id="calculateBtn">
+                    Calculate BMI
+                    <span>→</span>
+                </button>
+
+
+                <button id="resetBtn">
+                    Reset Calculator
+                </button>
+
+            </div>
+
+
+            <!-- Right Side: Result Section -->
+            <div class="result-section">
+
+                <div class="result-heading">
+                    <h2>Your Result</h2>
+                    <p>Your BMI calculation will appear here</p>
+                </div>
+
+
+                <div class="result-card">
+
+                    <p class="result-label">Your BMI Score</p>
+
+                    <h2 id="bmiValue">--</h2>
+
+                    <p id="bmiCategory">
+                        Enter your details to calculate BMI
+                    </p>
+
+                </div>
+
+
+                <!-- BMI Categories -->
+                <div class="bmi-scale">
+
+                    <h3>BMI Categories</h3>
+
+                    <div class="scale-container">
+
+                        <div class="scale-item">
+                            <div class="scale-color underweight"></div>
+                            <p>Underweight</p>
+                            <span>Below 18.5</span>
+                        </div>
+
+                        <div class="scale-item">
+                            <div class="scale-color normal"></div>
+                            <p>Normal</p>
+                            <span>18.5 - 24.9</span>
+                        </div>
+
+                        <div class="scale-item">
+                            <div class="scale-color overweight"></div>
+                            <p>Overweight</p>
+                            <span>25 - 29.9</span>
+                        </div>
+
+                        <div class="scale-item">
+                            <div class="scale-color obese"></div>
+                            <p>Obese</p>
+                            <span>30 or above</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>BMI Calculator | Built with HTML, CSS & JavaScript</p>
+            <p class="footer-note">
+                BMI is a general screening tool, not a medical diagnosis.
+            </p>
+        </footer>
+
+    </div>
+
+
+    <script src="Project 2.js"></script>
+
+</body>
+
+</html>
